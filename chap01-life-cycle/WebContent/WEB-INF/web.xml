@@ -14,8 +14,9 @@
   <servlet>
   	<servlet-name>xmlmapping</servlet-name>
   	<servlet-class>com.uni.section01.xml.LifeCXCycleTestServlet</servlet-class><!-- 실제로는 web 폴더안에 클래스 파일이 동작  -->
-  	<!--	 <load-on-startup>100</load-on-startup> 
-   <load-on-startup>0</load-on-startup>  -->
+  	<!-- 서블릿이 시작될때 순서대로 실행을 하는데 제일 먼저 시작시키고 싶을땐 0으로 준다. -->
+  	<load-on-startup>100</load-on-startup> 
+   <!--<load-on-startup>0</load-on-startup>  -->
   </servlet>
   <servlet-mapping>
   	<servlet-name>xmlmapping</servlet-name>

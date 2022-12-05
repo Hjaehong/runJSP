@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class LifeCycleTestServlet
  */
-@WebServlet("/annotation-lifecycle")
+@WebServlet(value = "/annotation-lifecycle", loadOnStartup = 10) //@WebServlet(value = "/annotation-lifecycle", loadOnStartup = 10)
 public class LifeCycleTestServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	private int initCount = 1;
