@@ -20,6 +20,6 @@
   </servlet>
   <servlet-mapping>
   	<servlet-name>xmlmapping</servlet-name>
-  	<url-pattern>/xml-lifecyle</url-pattern>
+  	<url-pattern>/request-service</url-pattern>
   </servlet-mapping>
 </web-app>
