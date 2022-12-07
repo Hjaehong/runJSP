@@ -33,7 +33,6 @@ public class LifeCXCycleTestServlet extends HttpServlet {
 	 * 서블릿의 요청이 들어온경우 한번 동작하는 메소드
 	 */
 	public void init(ServletConfig config) throws ServletException {
-		// TODO Auto-generated method stub
 		System.out.println("xml 매핑 init() 메소드 호출 :" + initCount++);
 	}
 
@@ -42,7 +41,6 @@ public class LifeCXCycleTestServlet extends HttpServlet {
 	 * 컨테이너가 종료될때 호출 되는 메소드 이고 주로 자원을 반납하는 용도로 사용
 	 */
 	public void destroy() {
-		// TODO Auto-generated method stub
 		System.out.println("xml 매핑 destroy() 메소드 호출 :" + distoryCount++);
 	}
 
@@ -52,7 +50,6 @@ public class LifeCXCycleTestServlet extends HttpServlet {
 	 * 두번째 요청 부터는 바로 service() 를 호출하게 된다.
 	 */
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
 		System.out.println("xml 매핑 service() 메소드 호출 :" + serviceCount++);
 	}
 

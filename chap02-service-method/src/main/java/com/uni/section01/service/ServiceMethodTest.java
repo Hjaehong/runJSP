@@ -26,9 +26,11 @@ public class ServiceMethodTest extends HttpServlet {
 	 * @see HttpServlet#service(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
-		HttpServletRequest httpReqyest = (HttpServletRequest) request;
-		HttpServletResponse httpServletResponse = (HttpServletResponse) response;
+		 /* 요청값, servlet 서비스의 요소값들을 전달 시킨다
+		  * 즉 클라이언트부터 서버 요청이 들어오면 생성하여 get, post형식으로 클라이언트에 전달
+		  * 만약 회원정보같은걸 컨트롤러에서 보낼때 이 HttpServletRequest 객체안에 모든 데이터가 전달된다. */  
+		HttpServletRequest httpReqyest = (HttpServletRequest) request; 
+		HttpServletResponse httpServletResponse = (HttpServletResponse) response; // 호출값
 		
 		String httpMethod = httpReqyest.getMethod();
 		System.out.println(httpMethod);
